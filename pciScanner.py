@@ -44,7 +44,7 @@ def banner():
         banner += " |  |_> >  \___|  |/        \  \___ / __ \|   |  \   |  \  ___/|  | \/\n"
         banner += " |   __/ \___  >__/_______  /\___  >____  /___|  /___|  /\___  >__|   \n"
         banner += " |__|        \/           \/     \/     \/     \/     \/     \/       \n"
-        banner += "                                           written by becrevex        \n"
+        banner += "                                        hacked together by becrevex   \n"
         banner += "                            based on SSHScan.py by Vincent Ruijter    \n"
         return banner
 
