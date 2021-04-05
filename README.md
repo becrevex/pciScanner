@@ -1,7 +1,7 @@
 # Installation
   $ git clone https://github.com/becrevex/pciScanner.git
 
-# Backgroud
+# Background
 SSHScan with PCI pass/fail context and improved CLI output.  
 
 # References
