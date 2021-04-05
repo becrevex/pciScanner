@@ -218,9 +218,9 @@ def get_output(rawlist):
                         print (bcolors.FAIL + ' FAIL ' + bcolors.ENDC) + ' [+] Detected the following weak ciphers: '
                         for item in weak_ciphers:
                                 if item in avoid:
-                                        print(bcolors.FAIL + '      ' + item  + bcolors.ENDC)
+                                        print(bcolors.FAIL + '         ' + item  + bcolors.ENDC)
                                 else:
-                                        print(bcolors.WARNING + '      ' + item  + bcolors.ENDC)
+                                        print(bcolors.WARNING + '         ' + item  + bcolors.ENDC)
                 else:
                         print (bcolors.OKGREEN + ' Pass ' + bcolors.ENDC) + ' [+] No weak ciphers detected!'
 
@@ -228,9 +228,9 @@ def get_output(rawlist):
                         print (bcolors.FAIL + ' FAIL ' + bcolors.ENDC) + ' [+] Detected the following weak KEX algorithms: '
                         for item in weak_kex:
                                 if item in avoid:
-                                        print(bcolors.FAIL + '      ' + item  + bcolors.ENDC)
+                                        print(bcolors.FAIL + '         ' + item  + bcolors.ENDC)
                                 else:
-                                        print(bcolors.WARNING + '      ' + item  + bcolors.ENDC)
+                                        print(bcolors.WARNING + '         ' + item  + bcolors.ENDC)
                 else:
                         print (bcolors.OKGREEN + ' Pass ' + bcolors.ENDC) + ' [+] No weak KEX detected!'
 
@@ -238,9 +238,9 @@ def get_output(rawlist):
                         print (bcolors.FAIL + ' FAIL ' + bcolors.ENDC) + ' [+] Detected the following weak MACs: '
                         for item in weak_macs:
                                 if item in avoid:
-                                        print(bcolors.FAIL + '      ' + item  + bcolors.ENDC)
+                                        print(bcolors.FAIL + '         ' + item  + bcolors.ENDC)
                                 else:
-                                        print(bcolors.WARNING + '      ' + item  + bcolors.ENDC)
+                                        print(bcolors.WARNING + '         ' + item  + bcolors.ENDC)
                 else:
                         print (bcolors.OKGREEN + ' Pass ' + bcolors.ENDC) + ' [+] No weak MACs detected!'
 
@@ -249,9 +249,9 @@ def get_output(rawlist):
                         print (bcolors.FAIL + ' FAIL ' + bcolors.ENDC) + ' [+] Detected the following weak HostKey algorithms: '
                         for item in weak_hka:
                                 if item in avoid:
-                                        print(bcolors.FAIL + '      ' + item  + bcolors.ENDC)
+                                        print(bcolors.FAIL + '         ' + item  + bcolors.ENDC)
                                 else:
-                                        print(bcolors.WARNING + '      ' + item  + bcolors.ENDC)
+                                        print(bcolors.WARNING + '         ' + item  + bcolors.ENDC)
                 else:
                         print (bcolors.OKGREEN + ' Pass ' + bcolors.ENDC) + ' [+] No weak HostKey algorithms detected!'
 
