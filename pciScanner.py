@@ -38,14 +38,14 @@ class bcolors:
     UNDERLINE = '\033[4m'
 
 def banner():
-        banner =  "               .__  _________                                         \n"
-        banner += " ______   ____ |__|/   _____/ ____  _____   ____   ____   ___________ \n"
-        banner += " \____ \_/ ___\|  |\_____  \_/ ___\ \__  \ /    \ /    \_/ __ \_  _ \\\n"
-        banner += " |  |_> >  \___|  |/        \  \___ / __ \|   |  \   |  \  ___/|  | \/\n"
-        banner += " |   __/ \___  >__/_______  /\___  >____  /___|  /___|  /\___  >__|   \n"
-        banner += " |__|        \/           \/     \/     \/     \/     \/     \/       \n"
-        banner += "                                        hacked together by becrevex   \n"
-        banner += "                            based on SSHScan.py by Vincent Ruijter    \n"
+	banner =  "             _  _____                                 "
+	banner += "            (_)/ ____|                                "
+	banner += "  _ __   ___ _| (___   ___ __ _ _ __  _ __   ___ _ __ "
+	banner += " | '_ \ / __| |\___ \ / __/ _` | '_ \| '_ \ / _ \ '__|"
+	banner += " | |_) | (__| |____) | (_| (_| | | | | | | |  __/ |   "
+	banner += " | .__/ \___|_|_____/ \___\__,_|_| |_|_| |_|\___|_|   "
+	banner += " | |                          hack job by becrevex    "
+	banner += " |_|           based on SSHScan by Vincent Ruijter    "
         return banner
 
 
