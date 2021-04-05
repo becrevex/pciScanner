@@ -38,14 +38,14 @@ class bcolors:
     UNDERLINE = '\033[4m'
 
 def banner():
-	banner =  "             _  _____                                 "
-	banner += "            (_)/ ____|                                "
-	banner += "  _ __   ___ _| (___   ___ __ _ _ __  _ __   ___ _ __ "
-	banner += " | '_ \ / __| |\___ \ / __/ _` | '_ \| '_ \ / _ \ '__|"
-	banner += " | |_) | (__| |____) | (_| (_| | | | | | | |  __/ |   "
-	banner += " | .__/ \___|_|_____/ \___\__,_|_| |_|_| |_|\___|_|   "
-	banner += " | |                          hack job by becrevex    "
-	banner += " |_|           based on SSHScan by Vincent Ruijter    "
+	banner =  "             _  _____                                 \n"
+	banner += "            (_)/ ____|                                \n"
+	banner += "  _ __   ___ _| (___   ___ __ _ _ __  _ __   ___ _ __ \n"
+	banner += " | '_ \ / __| |\___ \ / __/ _` | '_ \| '_ \ / _ \ '__|\n"
+	banner += " | |_) | (__| |____) | (_| (_| | | | | | | |  __/ |   \n"
+	banner += " | .__/ \___|_|_____/ \___\__,_|_| |_|_| |_|\___|_|   \n"
+	banner += " | |                          hack job by becrevex    \n"
+	banner += " |_|           based on SSHScan by Vincent Ruijter    \n"
         return banner
 
 
@@ -110,7 +110,8 @@ def parse_target(target):
 
                 ipport=target.split(':')
                 try:
-                        print "[*] Initiating scan for %s on port %s" %(ipport[0], ipport[1])
+			underline_ip = (bcolors.UNDERLINE + ipport[0] + bcolors.ENDC)
+                        print "[*] Initiating scan for %s on port %s" %(underline_ip, ipport[1])
                         if not get_output(exchange(ipport[0], int(ipport[1]))):
                                 return False
 
